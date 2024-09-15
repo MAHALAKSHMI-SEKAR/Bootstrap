@@ -1,0 +1,428 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    font-family: "Rubik", system-ui;
+    padding: 0;
+    margin: 0;   
+}
+
+::-webkit-scrollbar{
+    height: 20px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(149, 228, 232);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+ /* nav bar  */
+.fa-chart-line {
+    padding: 10px;
+    font-size: 40px;
+    color: rgb(55, 55, 196);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Dropdown menu styles */
+.dropdown1 .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    width: 300px; 
+}
+
+
+.dropdown2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dropdown2 a span,
+.navbar-nav .nav-item .active {
+    color: rgb(22, 196, 196);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+
+body {
+    color: #212529;
+}
+
+.navbar-brand {
+    color: #000000;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    padding-right: 20px;
+}
+
+
+img.rounded-circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+
+.collapse form .form-control {
+    width: 500px;
+    max-width: 100%; 
+}
+
+/* Navbar button icon size */
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+}
+
+
+/* container  */
+
+.container1 .row {
+    background-color: rgb(233, 231, 231) !important;
+    margin: 110px 0px 10px 0px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for each column */
+.container1 .row .col {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: rgb(233, 231, 231) !important;
+    border: 1px solid rgb(233, 231, 231);
+    border-radius: 20px;
+    transition: border-color 0.3s, color 0.5s;
+}
+
+/* Icon styling */
+.container1 .row .col .fa-solid {
+    font-size: 20px;
+    background-color:  rgb(221, 221, 221) !important;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.container1 .row .col:hover {
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%) !important;
+    border: 1px solid linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    color: white !important;
+    cursor: pointer;
+}
+
+.container1 .row .active{
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%) !important;
+    border: 1px solid linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    color: white !important;
+    cursor: pointer;
+}
+
+
+.container1 .row .active .Dashboard{
+    background: transparent !important;
+}
+
+.container1 .row .col:hover .fa-solid {
+    color:  rgb(22, 196, 196);
+    background-color: transparent !important;
+}
+.fa-solid{
+    color: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    margin: 10px;
+    min-height: 100vh;
+    background-color: rgb(233, 231, 231) !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.content {
+    margin-left: 0; 
+}
+  .sidebar .title {
+    background-color: rgb(233, 231, 231) !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .sidebar .menu-item {
+    font-size: 1rem;
+    background-color: rgb(233, 231, 231) !important;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .sidebar .menu-item:hover {
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%) !important;
+    border: 1px solid linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    color: white !important;
+    cursor: pointer;
+  }
+ 
+  .sidebar .active{
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%) !important;
+    border: 1px solid linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    color: white !important;
+    cursor: pointer;
+  }
+  
+  .content .container .row .col .p-3 i {
+    font-size: 16px; 
+    background-color: rgb(189, 189, 189) !important;
+    height: 40px; 
+    width: 40px; 
+    padding-top: 10px; 
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .content .container .row .col .p-3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(233, 231, 231) !important;
+    border-radius: 15px;
+    padding: 10px; 
+    font-size: 0.9rem; 
+    text-align: center;
+    min-height: 100px; 
+  }
+  
+
+  .content .container .row .col .p-3 span{
+    background-color: rgb(233, 231, 231) !important;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* chart  */
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex: 1; 
+    min-height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 20px; 
+    align-items: stretch; 
+}
+
+.row2 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1; 
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+#lineChart, #barChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.footer {
+    background-color: rgb(233, 231, 231);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: relative; 
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid rgb(55, 55, 196);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(55, 55, 196);
+}
+
+
+/* General styles for small devices (mobiles) */
+@media (max-width: 576px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .navbar-brand, .navbar-nav {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: block;
+        height: auto;
+    }
+
+    .sidebar ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sidebar ul li {
+        display: inline;
+        margin: 5px;
+    }
+
+    /* Main content area */
+    .main-content {
+        padding: 15px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .chart-container {
+        height: 250px; 
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        height: 100%;
+    }
+
+    .main-content {
+        margin-left: 250px;
+        padding: 20px;
+    }
+
+    /* Dashboard cards */
+    .dashboard-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-card {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    .chart-container {
+        height: 350px; 
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 993px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 300px;
+        height: 100%;
+    }
+
+    .main-content {
+        margin-left: 300px;
+        padding: 30px;
+    }
+
+    /* Dashboard cards */
+    .dashboard-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-card {
+        width: calc(33.33% - 15px);
+        margin-bottom: 15px;
+    }
+    .chart-container {
+        height: 500px; 
+    }
+}
